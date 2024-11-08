@@ -1,0 +1,125 @@
+:root {
+  --primary: #7381ff;
+  --secondary: #e6eaf8;
+  --white: #fff;
+  --black: #202142;
+  --grey: #ebeff3;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  font-size: 1.6rem;
+  background-color: var(--grey);
+  color: var(--black);
+}
+
+.container {
+  max-width: 1280px;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+header {
+  border-bottom: 1px solid var(--secondary);
+  background-color: var(--white);
+}
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+.logo-box {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-icon {
+  font-size: 3.6rem;
+  color: var(--black);
+}
+
+.logo-name {
+  font-size: 2.8rem;
+  font-weight: 500;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: var(--black);
+  transition: all 0.5s;
+}
+
+a:hover,
+a:active {
+  color: var(--primary);
+}
+
+nav {
+  display: flex;
+  gap: 1.4rem;
+  align-items: center;
+}
+
+nav a {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--black);
+}
+
+/* button */
+.btn {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: inherit;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 1.8rem;
+  padding: 1rem 2rem;
+  transition: all 0.3s;
+}
+
+.btn:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 0.4rem var(--primary-light);
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.btn-primary:hover:enabled {
+  opacity: 0.9;
+}
+
+/* footer */
+footer {
+  background-color: var(--white);
+  padding: 2.8rem 0;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
