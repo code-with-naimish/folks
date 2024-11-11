@@ -35,9 +35,7 @@ body {
   margin: 0 auto;
 }
 
-.container-mini {
-  min-width: 980px;
-  margin: 0 auto;
+.inner-container {
   background-color: var(--secondary);
   border-radius: 10px;
 }
@@ -133,7 +131,7 @@ nav a:hover::before {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 .no-data {
