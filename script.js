@@ -48,16 +48,18 @@ function userCard(user) {
   console.log(user);
   return `
    <div class="user-box">
-            <figure class="user-image-box">
-              <img class="user-image" src="${user.image}"
-                alt="user">
-            </figure>
-            <div class="user-info">
-              <p class="username">${user.firstName} ${user.lastName}</p>
-              <p class="emai-add">${user.email}</p>
-              <p class="age">Age: ${user.age}</p>
 
-            </div>
-          </div>
+         <figure class="user-image-box">
+           <img class="user-image" src="${user.image}"
+             alt="user">
+         </figure>
+        
+         <div class="user-info">
+           <p class="username">${user.firstName} ${user.lastName}</p>
+           <p class="emai-add">${user.email}</p>
+           <p class="age">Age: ${user.age}</p>
+
+         </div>
+       </div> 
   `;
 }
