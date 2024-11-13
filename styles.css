@@ -105,6 +105,9 @@ nav a:hover::before {
   transition: all 0.3s;
 }
 
+.main {
+  padding: 6rem;
+}
 /* HTML: <div class="loader"></div> */
 .loader {
   width: 60px;
@@ -145,17 +148,19 @@ nav a:hover::before {
 .grid-box {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2.4rem;
-  padding-top: 6rem;
+  gap: 1.4rem;
+  padding: 6rem;
 }
 
 .user-box {
   display: flex;
-  align-items: start;
+  align-items: center;
   gap: 1.2rem;
   background-color: var(--white);
   transition: all 0.3s ease;
   border: 1px solid transparent;
+  padding: 1.6rem;
+  border-radius: 5px;
 }
 
 .user-box:hover {
@@ -163,8 +168,8 @@ nav a:hover::before {
 }
 
 .user-image-box {
-  width: 9rem;
-  height: 9rem;
+  width: 6rem;
+  height: 6rem;
   border-radius: 50%;
   overflow: hidden;
   flex: none;
@@ -177,17 +182,19 @@ nav a:hover::before {
 }
 
 .username {
-  font-size: 2.6rem;
+  font-size: 2rem;
   letter-spacing: -1px;
   margin-bottom: 0.4rem;
   font-weight: 600;
 }
 
-.emai-add,
+.emai-add {
+  font-size: 1.6rem;
+  margin-bottom: 0.6rem;
+}
 .age {
-  opacity: 0.9;
-  font-size: 1.4rem;
-  font-style: italic;
+  opacity: 0.7;
+  font-size: 1.2rem;
 }
 
 /* footer */
@@ -199,6 +206,7 @@ footer {
   bottom: 0;
   width: 100%;
   border-top: 1px solid var(--secondary);
+  margin-top: 3rem;
 }
 
 .footer-text {

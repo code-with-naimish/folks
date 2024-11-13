@@ -1,7 +1,6 @@
 "use strict";
 
 const fetchUser = async function () {
-  debugger;
   const loaderBox = document.getElementById("loader-box");
   const noDataBox = document.getElementById("no-data-box");
   const mainData = document.getElementById("main-data");
