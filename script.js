@@ -3,7 +3,7 @@
 const fetchUser = async function () {
   const loaderBox = document.getElementById("loader-box");
   const noDataBox = document.getElementById("no-data-box");
-  const mainData = document.getElementById("main-data");
+  const mainData = document.getElementById("user-list");
   noDataBox.classList.add("hidden");
   mainData.classList.add("hidden");
 
@@ -56,7 +56,7 @@ function userCard(user) {
         
          <div class="user-info">
            <p class="username">${user.firstName} ${user.lastName}</p>
-           <p class="emai-add">${user.email}</p>
+           <p class="email-add">${user.email}</p>
            <p class="age">Age: ${user.age}</p>
 
          </div>

@@ -182,6 +182,10 @@ nav a:hover::before {
   object-fit: cover;
 }
 
+.user-info {
+  flex-grow: 1;
+}
+
 .username {
   font-size: 1.6rem;
   letter-spacing: -1px;
@@ -189,7 +193,7 @@ nav a:hover::before {
   font-weight: 600;
 }
 
-.emai-add {
+.email-add {
   font-size: 1.4rem;
   margin-bottom: 0.6rem;
 }
@@ -216,4 +220,26 @@ footer {
 
 .footer-text .github-link {
   color: var(--primary);
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 100%;
+  }
+  .grid-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .grid-box {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 375px) {
+  html {
+    font-size: 56.25%;
+  }
+  .user-box {
+    flex-direction: column;
+  }
 }
